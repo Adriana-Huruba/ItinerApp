@@ -1,3 +1,4 @@
+// fallback screen
 import { Stack, Link } from 'expo-router'
 import {View, StyleSheet} from 'react-native'
 
@@ -6,7 +7,7 @@ export default function NotFoundScreen(){
         <>
         <Stack.Screen options={{title: 'Not found!'}} />
         <View style={styles.container}>
-            <Link href="/tabs/index" style={styles.button}>
+            <Link href="/" style={styles.button}> 
                 Go back to home screen!
             </Link>
         </View>
